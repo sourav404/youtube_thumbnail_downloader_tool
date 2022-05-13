@@ -1,0 +1,73 @@
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.hero.is-info {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://unsplash.it/1200/900?random') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero .nav,
+.hero.is-success .nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.hero .subtitle {
+    padding: 3rem 0;
+    line-height: 1.5;
+}
+
+#loder {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    background: #fff;
+    opacity: 0.8;
+    display: none;
+}
+
+#loder #load {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#close {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    top: 0;
+    margin: 20px;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+}
